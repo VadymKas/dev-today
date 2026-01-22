@@ -1,0 +1,57 @@
+.sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 250px;
+	height: 100vh;
+	background-color: #1f2937; 
+	color: #fff;
+	padding: 16px;
+	box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+	overflow-y: auto;
+	transition: transform 0.3s ease;
+}
+
+.sidebar-button {
+	position: fixed;
+	top: 16px;
+	left: 16px;
+	width: 32px;
+	height: 32px;
+	background-color: #2563eb; 
+	border-radius: 50%;
+	cursor: pointer;
+	z-index: 1000;
+}
+
+.sidebar div {
+	cursor: pointer;
+	padding: 8px 12px;
+	border-radius: 4px;
+	transition: background 0.2s;
+}
+
+.sidebar div:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar div > div {
+	padding-left: 16px;
+	font-size: 0.9rem;
+	color: #d1d5db; 
+}
+
+.sidebar div > div {
+	transition:
+		max-height 0.3s ease,
+		padding 0.3s ease;
+}
+
+.sidebar::-webkit-scrollbar {
+	width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 3px;
+}
