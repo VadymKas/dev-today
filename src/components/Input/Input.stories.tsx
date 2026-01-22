@@ -21,5 +21,5 @@ export const Number: Story = {
 }
 
 export const ClearableInput: Story = {
-	args: { clearable: true, placeholder: 'Clear me' }
+	args: { clearable: true, placeholder: 'Text is needed' }
 }

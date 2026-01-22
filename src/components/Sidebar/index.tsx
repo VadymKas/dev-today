@@ -9,10 +9,7 @@ type Props = {
 export const Sidebar = ({ items, onClose }: Props) => {
 	return (
 		<div>
-			<div
-				className={'sidebar-button'}
-				onClick={onClose}
-			/>
+		
 			<aside className={'sidebar'}>
 				{items.map(i => (
 					<SidebarItem

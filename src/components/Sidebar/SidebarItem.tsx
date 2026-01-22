@@ -16,7 +16,7 @@ export const SidebarItem = ({ item }: { item: SidebarItemType }) => {
 				item.children?.map(c => (
 					<div
 						key={c.id}
-						style={{ paddingLeft: 16 }}>
+						style={{ paddingLeft: 32 }}>
 						{c.label}
 					</div>
 				))}
