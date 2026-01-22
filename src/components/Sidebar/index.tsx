@@ -8,8 +8,7 @@ type Props = {
 
 export const Sidebar = ({ items, onClose }: Props) => {
 	return (
-		<div>
-		
+		<div onClick={onClose}>		
 			<aside className={'sidebar'}>
 				{items.map(i => (
 					<SidebarItem

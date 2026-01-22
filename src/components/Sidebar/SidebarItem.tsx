@@ -13,11 +13,11 @@ export const SidebarItem = ({ item }: { item: SidebarItemType }) => {
 		<div>
 			<div onClick={() => setOpen(open => !open)}>{item.label}</div>
 			{open &&
-				item.children?.map(c => (
+				item.children?.map(child => (
 					<div
-						key={c.id}
-						style={{ paddingLeft: 32 }}>
-						{c.label}
+						key={child.id}
+						style={{ paddingLeft: 24 }}>
+						{`-  ${child.label}`}
 					</div>
 				))}
 		</div>
